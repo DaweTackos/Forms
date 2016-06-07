@@ -273,6 +273,27 @@ class Form
 
 
     /**
+     * Add checkbox input to form.
+     *
+     * @param string      $name  name of element
+     * @param string|null $label
+     *
+     * @return Controls\Checkbox
+     */
+    public function addCheckbox($name, $label = null)
+    {
+        $control = new Controls\Checkbox($name, $label);
+        $id = $this->element->getAttribute('id') . '-' . $name;
+        $control->getElement()
+            ->setAttribute('id', $id);
+        $control->getLabel()->setAttribute('for', $id);
+        $this->addControl($control);
+
+        return $control;
+    }
+
+
+    /**
      * Add group to form. All input after this method will add in this group.
      *
      * @param string      $name  name of group witch display in received data

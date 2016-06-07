@@ -26,6 +26,12 @@
             ->setType('number');
     $form->addText('date', 'Date input:', INPUT_TEXT_SIZE)
             ->setType('date');
+    $form->addCheckbox('checkbox', 'Checkbox:')
+            ->setValue('checkbox-value');
+    $form->addCheckbox('checkbox-required', 'Required checkbox:')
+            ->setRequired();
+    $form->addCheckbox('checkbox-disabled', 'Disabled checkbox:')
+            ->setDisabled();
     $form->addPassword('password', 'Password:', INPUT_TEXT_SIZE);
 
     $form->addGroup('another-group', 'Another group');
