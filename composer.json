@@ -1,0 +1,19 @@
+{
+  "name": "Forms",
+  "description": "Library for create and render web forms",
+  "authors": [
+    {
+      "name": "David Taller"
+    }
+  ],
+  "require": {
+    "php": ">= 5.3.7"
+  },
+  "require-dev": {
+    "tracy/tracy": "~2.3.0"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  }
+}
+
