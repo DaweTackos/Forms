@@ -1,1 +1,1 @@
-Create, render and validate web forms.
+Library for create and render  web forms.
